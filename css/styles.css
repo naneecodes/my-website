@@ -42,14 +42,21 @@ img {
   height: auto;
 }
 
+header {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
 main {
-  margin: 20px;
+  font-family: "Amethysta";
+  margin: 0 auto;
+  max-width: 1100px;
 }
 
 /* NAVIGATION */
 .header-container {
-  margin: 0 auto;
-  padding: 0 1.5rem;
+  margin: 1.5rem 0;
+  padding: 1.5rem 1.5rem 1.5rem 0;
 }
 
 .menu-links {
@@ -79,6 +86,44 @@ main {
 .intro-block {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: "Amethysta";
-  width: 60%;
+  border-bottom: 1px solid #2c3b62;
+  padding-bottom: 60px;
+}
+
+.work-block {
+  padding-top: 60px;
+}
+
+.work-block > h2 {
+  padding-bottom: 50px;
+}
+
+.project-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.project-blocks > div {
+  border: 1px solid #2c3b62;
+  width: 300px;
+  height: 350px;
+  margin: 20px;
+}
+
+/** MEDIA QUERIES **/
+
+@media screen and (max-width: 1200px) {
+  body {
+    margin: 40px;
+  }
+
+  .intro-block {
+    text-align: center;
+  }
+
+  .work-block div,
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
 }
