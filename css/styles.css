@@ -7,8 +7,6 @@
 }
 
 html {
-  font-family: "Roboto Mono", monospace;
-  font-size: 14px;
   box-sizing: border-box;
 }
 
@@ -20,6 +18,8 @@ body {
 header {
   margin: 0 auto;
   max-width: 1100px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
 }
 
 main {
@@ -35,6 +35,10 @@ nav {
   /* border-bottom: 1px solid #2c3b62; */
 }
 
+ul {
+  list-style: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -48,8 +52,9 @@ img {
 
 h1,
 h2 {
-  font-weight: normal !important;
+  font-weight: normal;
 }
+
 /* NAVIGATION */
 .header-container {
   margin: 1.5rem 0;
@@ -60,7 +65,6 @@ h2 {
   display: flex;
   justify-content: space-around;
   width: 20rem;
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -95,6 +99,7 @@ h2 {
 }
 
 .work-block > h2 {
+  font-family: "Roboto Mono", monospace;
   padding-bottom: 50px;
 }
 
@@ -112,6 +117,29 @@ h2 {
 
 .blog-block {
   padding-top: 50px;
+}
+
+.blog-block > h2,
+p {
+  font-family: "Roboto Mono", monospace;
+}
+
+.blog-block > h2 {
+  padding-bottom: 50px;
+}
+
+.blog-post-list > li {
+  padding-bottom: 20px;
+}
+
+.blog-post-list > a {
+  font-family: "Amethysta";
+}
+
+.under-links > h3 {
+  text-decoration: underline;
+  font-size: 24px;
+  font-weight: normal;
 }
 
 /** MEDIA QUERIES **/
