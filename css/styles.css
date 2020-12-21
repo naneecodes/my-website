@@ -82,6 +82,8 @@ footer {
 
 .burger {
   display: none;
+  height: 30px;
+  width: 30px;
 }
 
 .burger div {
@@ -267,4 +269,19 @@ p {
 
 .nav-active {
   transform: translateX(0%);
+}
+
+.menu-open-top {
+  transition: transform 0.5s ease-in;
+  transform: rotate(45deg) translate(4px, 7px);
+}
+
+.menu-open-middle {
+  transition: transform 0.5s ease-in;
+  opacity: 0;
+}
+
+.menu-open-bottom {
+  transition: transform 0.5s ease-in;
+  transform: rotate(-45deg) translate(6px, -5px);
 }
